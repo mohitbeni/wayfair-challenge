@@ -1,0 +1,222 @@
+.outer-container {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(146, 153, 153, 0.256);
+  min-height: 800px;
+  min-width: 500px;
+  position: relative;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-width: 500px;
+  max-width: 800px;
+  /* position: relative; */
+}
+
+img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px 40px;
+  margin-top: 20px;
+  box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+  gap: 15px;
+  border-radius: 10px;
+}
+
+.card:hover {
+  background-color: #ddcccc;
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: transform 0.5s ease-in-out; /* Smooth scaling on hover */
+}
+
+.title-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.price {
+  font-style: italic;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.container {
+  transition: opacity 0.5s ease/* Smooth scaling on hover */
+}
+
+.input {
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center the input */
+  width: 100%; /*Full width of parent */
+  min-width: 250px;
+  position: relative;
+}
+
+.result-count {
+  position: absolute; /* Position the span absolutely */
+  right: 10px; /* Align it to the right */
+  top: 50%; /* Vertically center it */
+  transform: translateY(-50%); /* Adjust for half of its height */
+}
+
+.input input {
+  flex: 1; /* Take available width */
+  margin-right: 10px; /* Space between input and span */
+  max-width: 300px;
+}
+
+.input-search {
+  flex: 1; /* Allow input to take available space */
+  max-width: 400px; /* Limit the max width of the input */
+  margin-right: 10px; /* Space between input and span */
+  padding: 8px;
+  border-radius: 4px; /* Add some padding for better appearance */
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* CSS */
+.button-27 {
+  appearance: none;
+  background-color: #000000;
+  border: 2px solid #1a1a1a;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 30px;
+  min-width: 0;
+  outline: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100px
+  will-change: transform;
+}
+
+.button-27:disabled {
+  pointer-events: none;
+}
+
+.button-27:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-27:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-button{
+  position: absolute;
+  left: 10px
+}
+
+.sidebar {
+  max-width: 400px;
+}
+
+.sidebar-overlay {
+  width: 250px;                       /* Fixed width for the sidebar */
+  height: 100vh;                     /* Full height of the viewport */
+  background-color: #f4f4f4;         /* Light grey background */
+  padding: 20px;                     /* Padding inside the sidebar */
+  position: fixed;                   /* Fixed position to stay on the screen */
+  left: 0;                           /* Align to the left */
+  top: 0;                            /* Align to the top */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 10; /* Subtle shadow effect */
+  overflow: auto;
+  transition: all 1s ease-in-out,
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;               /* Space below the title */
+}
+
+.sidebar-item {
+  margin: 15px 0;                    /* Space between items */
+}
+
+.sidebar-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+.cart-btns button{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  appearance: none;
+  background-color: #000000;
+  border: 2px solid #1a1a1a;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar-img img {
+  margin-left: 10px;
+}
+
+.total-price {
+  font-size: 1.5rem;          /* Larger font for emphasis */
+  font-weight: bold;          /* Bold text for emphasis */
+  color: #333;                /* Dark color for readability */
+  margin-top: 10px;           /* Space above */
+  text-align: right;
+  margin-top: 20px;          /* Align to the right (or center, if you prefer) */
+}
+
+.total-price span {
+  font-size: 1.25rem;         /* Slightly smaller font for the dollar amount */
+  color: #007BFF;             /* Blue color for the dollar amount */
+}
